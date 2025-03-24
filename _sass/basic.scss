@@ -1,0 +1,142 @@
+body {
+  font-size: 0.9em;
+  max-width: 40em;
+  margin: auto;
+}
+
+nav {
+  padding-block-start: 2em;
+  padding-block-end: 2em;
+
+  text-align: center; 
+ 
+  .link {
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+  }
+
+  a.current {
+    font-weight: 700;
+  }
+}
+
+header {
+  text-align: center;
+  padding-block-start: 3em;
+  padding-block-end: 3em;
+
+  h1,h5,h6 {
+    margin: 0;
+  }
+}
+
+main {
+  padding-block-start: 1em;
+  padding-block-end: 1em;
+  p {
+  text-align: justify;
+  }
+}
+
+footer {
+  padding-block-start: 2em;
+  padding-block-end: 2em;
+
+  text-align: left;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+}
+
+ul, ol, p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  line-height: 1.5em 
+}
+
+
+a {
+  color: $color3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color4;
+  text-decoration: none;
+}
+
+code {
+  display: inline-block;
+  font-size: 1em;
+  font-family: inherit;
+  color: $color7;
+  background: $color11;
+  padding: 0.1em 0.3em;
+  border-radius: 0.1em;
+}
+
+pre {
+  //font-size: 1em;
+  font-family: inherit;
+  padding: 0.5em;
+  border-left: solid 0.2em $color10;
+  overflow-x: auto;
+  background: $color11;
+}
+
+blockquote {
+  border-left: solid 0.15em $color5;
+  padding-left: 1.5em;
+  margin: 0;
+  box-sizing: content-box;
+  p {
+    color: $color5;
+    line-height: 2em;
+  }
+}
+ul {
+  list-style: "- " outside;
+}
+
+ul, ol {
+  padding-inline-start: 2.5em;
+  li {
+    margin-block-end: 1em;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: 700; 
+}
+
+h1 {
+  color: $color1;
+}
+
+h2 {
+  color: $color5;
+}
+
+h3 {
+  color: $color6;
+}
+
+h4, h5, h6 {
+  font-weight: 500;
+}
+
+h4 {
+  color: $color7;
+}
+
+h5 {
+  color: $color8;
+}
+
+h6 {
+  color: $color9;
+}

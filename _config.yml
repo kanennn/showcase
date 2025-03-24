@@ -1,0 +1,25 @@
+url: "kanennn.dev" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "kanennn" # the name of your site, e.g. ACME Corp.
+
+author: Kanen Stephens
+license: MIT
+repo: "https://github.com/kanennn/showcase"
+
+permalink: pretty
+# make sure to include the root / and trailing / in urls so that the liquid highlighting logic can compare the current url to links
+nav_links:
+  - label: home
+    url: /
+  - label: about
+    url: /about/
+  - label: projects
+    url: /projects/
+  - label: contact
+    url: /contact/
+  - label: resume
+    url: /resume.pdf
+
+collections_dir: collections
+collections:
+  - projects

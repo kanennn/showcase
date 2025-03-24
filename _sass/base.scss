@@ -1,0 +1,42 @@
+$fa-font-path : "/assets/fontawesome/webfonts";
+@import "../assets/fontawesome/scss/fontawesome.scss";
+@import "../assets/fontawesome/scss/solid.scss";
+@import "../assets/fontawesome/scss/brands.scss";
+
+@font-face {
+  font-family: RobotoMono;
+  src: url("/assets/webfonts/roboto-mono/RobotoMono-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: RobotoMono;
+  src: url("/assets/webfonts/roboto-mono/RobotoMono-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+}
+
+$bodyFont: RobotoMono, mono;
+
+$color0: #ffffff;
+$color1: #303446;
+$color2: #4c4f69;
+$color3: #7287fd;
+$color4: #1e66f5;
+$color5: #dd7878;
+$color6: #ea999c;
+//$color7: #45475a;
+$color7: #3e4759;
+$color8: #6c7086;
+$color9: #a6adc8;
+//$color10: #cdd6f4;
+//$color11: #ecf0ff;
+$color10: #cdd6e4;
+$color11: #ecf0f9;
+
+body {
+  background: $color0;
+  color: $color2;
+  font-family: $bodyFont;
+}
+
+
