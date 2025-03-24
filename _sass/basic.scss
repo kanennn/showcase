@@ -43,9 +43,7 @@ main {
 footer {
   padding-block-start: 2em;
   padding-block-end: 2em;
-
   text-align: left;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,44 +60,44 @@ ul, ol, p {
 
 
 a {
-  color: $color3;
   text-decoration: none;
+  @include theme($color: "color3");
 }
 
 a:hover {
-  color: $color4;
   text-decoration: none;
+  @include theme($color: "color4");
 }
 
 code {
   display: inline-block;
   font-size: 1em;
   font-family: inherit;
-  color: $color7;
-  background: $color11;
   padding: 0.1em 0.3em;
   border-radius: 0.1em;
+  @include theme($color: "color7", $background: "color11");
 }
 
 pre {
-  //font-size: 1em;
   font-family: inherit;
   padding: 0.5em;
-  border-left: solid 0.2em $color10;
+  border-left: solid 0.2em;
   overflow-x: auto;
-  background: $color11;
+  @include theme($border-color: "color10", $background: "color11");
 }
 
 blockquote {
-  border-left: solid 0.15em $color5;
+  border-left: solid 0.15em;
   padding-left: 1.5em;
   margin: 0;
   box-sizing: content-box;
+  @include theme($border-color: "color5");
   p {
-    color: $color5;
     line-height: 2em;
+    @include theme($color: "color5");
   }
 }
+
 ul {
   list-style: "- " outside;
 }
@@ -116,15 +114,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  color: $color1;
+  @include theme($color: "color1");
 }
 
 h2 {
-  color: $color5;
+  @include theme($color: "color5");
 }
 
 h3 {
-  color: $color6;
+  @include theme($color: "color6");
 }
 
 h4, h5, h6 {
@@ -132,13 +130,13 @@ h4, h5, h6 {
 }
 
 h4 {
-  color: $color7;
+  @include theme($color: "color7");
 }
 
 h5 {
-  color: $color8;
+  @include theme($color: "color8");
 }
 
 h6 {
-  color: $color9;
+  @include theme($color: "color9");
 }

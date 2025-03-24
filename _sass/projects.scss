@@ -4,9 +4,8 @@ ul.project_list {
   li {
     padding: 1em;
     margin: 1em 0;
-    border: 0.15em solid $color6;
+    border: 0.15em solid;
     border-radius: 0.5em; 
-    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -19,6 +18,8 @@ ul.project_list {
     h2, h3, h6, p {
       margin: 0; 
     }
+
+    @include theme($border-color: "color6");
   }
 
   li + li {
