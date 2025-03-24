@@ -1,13 +1,15 @@
 body {
   font-size: 0.9em;
   max-width: 40em;
+  padding: 0 2em;
+
   margin: auto;
 }
 
 nav {
   padding-block-start: 2em;
   padding-block-end: 2em;
-
+  line-height: 2em;
   text-align: center; 
  
   .link {
