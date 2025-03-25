@@ -50,11 +50,11 @@ $dark-theme: (
   color11: #373133,
 );
 
-@mixin theme($args...) { 
+@mixin theme($args...) {
+  @debug meta.keywords($args);
   @each $key, $value in meta.keywords($args) {  
     #{$key}: map.get($light-theme, $value);
   }
-  @debug meta.keywords($args);
 
   @each $key, $value in meta.keywords($args) {  
     @media (prefers-color-scheme: dark) {
