@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "welcome to my website"
-subtitle: "i hope you have a great time"
+title: "hi 👋 i'm kanennn"
+subtitle: "welcome to my website"
 ---
 
 # heading 1
