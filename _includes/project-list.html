@@ -1,0 +1,11 @@
+<ul class="project_list">
+{% assign projects = site.projects | sort: "index" %}
+{% for i in projects %}
+<li>
+  <h2 id="title">{{i.title}}</h2>
+  <h6 id="status">{{i.status}}</h6>
+  <p id="subtitle">{{i.subtitle}}</p>
+  <h3 id="info"><i class="fa-solid fa-code"></i> {{i.language}} • <a href="{{i.repo}}">{{i.host}} <i class="fa-solid fa-square-arrow-up-right"></i></a></h3>
+</li>
+{% endfor %}
+</ul>

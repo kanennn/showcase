@@ -1,0 +1,9 @@
+<nav>
+  {% for i in site.nav_links %}
+  {% if i.url == page.url %}
+  <a class="current link" href="{{i.url}}">{{i.label}}</a>
+  {% else %}
+  <a class="link" href="{{i.url}}">{{i.label}}</a>
+  {% endif %}
+  {% endfor %}
+</nav>
